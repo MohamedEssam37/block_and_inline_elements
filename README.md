@@ -3,4 +3,4 @@ __some few examples of deffrence between block and inline elements and how to co
 
 Go to the [https://mohamedessam37.github.io/block_and_inline_elements/diffrence_between_block_and_inline_elements](https://mohamedessam37.github.io/block_and_inline_elements/diffrence_between_block_and_inline_elements)
 
-Is use only for leaning not sharing
+Is use only for leaning not make another vesions of it then share the another versions
