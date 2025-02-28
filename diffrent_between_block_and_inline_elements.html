@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>diffrent between block and inline elements</title>
+    <link rel="stylesheet" href="teacher_activity4.css">
+    <script src="teacher_activity4.js"></script>
+</head>
+<body>
+    <h1 class="header">Block and inline elements</h1>
+    <p id="p_properties">
+        <span class="head">properties of</span>
+        <ul class="deafult_list_block">
+            <li class="li_defult_list_block">
+                <span class="little_words"><strong><em>Block-level elements</em></strong></span>
+                <ol class="nested_list_deafult_list_block">
+                    <li class="li_nested_list_deafult_list_block">always start in a new line</li>
+                    <li class="li_nested_list_deafult_list_block">take up the full width available</li>
+                    <li class="li_nested_list_deafult_list_block">can contain both block level and inline elements</li>
+                </ol>
+            </li>
+
+            <li class="li_defult_list_inline">
+                <span class="little_words"><strong><em>inline-level elements</em></strong></span>
+                <ol class="nested_list_deafult_list_inline">
+                    <li class="li_nested_list_deafult_list_inline">don't always start in a new line</li>
+                    <li class="li_nested_list_deafult_list_inline">only take up as much width as necessary</li>
+                    <li class="li_nested_list_deafult_list_inline">can only contain inline elements</li>
+                </ol>
+            </li>
+        </ul>
+    </p>
+
+    <div id="div_examples">
+
+        <ul class="hover_list">
+            <li class="li_hover_list">
+                Examples of <span class="little_words">block-level</span> elements
+                <ol class="list_hover_list">
+                    <li class="li_list_hover_list">div</li>
+                    <li class="li_list_hover_list">p</li>
+                    <li class="li_list_hover_list">h1 to h6</li>
+                </ol>
+            </li>
+            
+            <li class="li_hover_list">
+                Examples of <span class="little_words">inline-level</span> elements
+                <ol class="list_hover_list">
+                    <li class="li_list_hover_list">em</li>
+                    <li class="li_list_hover_list">span</li>
+                    <li class="li_list_hover_list">a</li>
+                    <li class="li_list_hover_list">strong</li>
+                    <li class="li_list_hover_list">img</li>
+                </ol>
+            </li>
+        </ul>
+        <hr>
+        <h2 class="header">Can you change the <a href="#code_inline_to_block">inline element to block element</a> and the <a href="#code_block_to_inline">block element to inline element</a> ???</h2>
+
+        <div id="code_inline_to_block">
+        <p>
+            This is <span id="turn_into_block"><span id="small_span">span</span></span> element with margin 5px and padding 3px<br>
+        </p>
+        <p>html code is</p>
+            <code class="code">
+                <div class="type">
+                    <span class="span_type">HTML </span><span class="file">file</span>
+                </div>
+                <pre class="code_pre">&lt;p&gt;
+    This is &lt;span id="turn_into_block"&gt;&lt;span id="small_span"&gt;span&lt;/span&gt;&lt;/span&gt; element&lt;br&gt;
+&lt;/p&gt;</pre>
+            </code>
+
+                
+
+            <p>CSS code is</p>
+            <code class="code">
+                <div class="type">
+                    <span class="span_type">CSS </span><span class="file">file</span>
+                </div>
+                <pre class="code_pre">#turn_into_block{
+    display: flex;
+    margin: 5px;
+    padding: 3px;
+    justify-content: center;
+    align-items: center;
+    width: 20vh;
+    height: 20vh;
+    border: 1px solid red;
+    background-color: aquamarine;
+    color: #000000;
+}
+
+#small_span{
+    text-align: center;
+    border: 3px double rgb(116, 67, 202);
+    background-color: yellow;
+}</pre> 
+            </code>
+
+        </div>
+            <hr>
+        <div id="code_block_to_inline">
+            <p>
+                <p id="turn_into_inline">paragraph</p> tag next to a text like a span
+            </p>
+            <p>HTML code is</p>
+            <code class="code">
+                <div class="type"><span class="span_type">HTML</span><span class="file">file</span></div>
+                <pre>&lt;p&gt;
+    &lt;p id="turn_into_inline"&gt;paragraph&lt;/p&gt; tag next to a text like a span
+&lt;/p&gt;</pre>
+            </code>
+            <p>CSS code is</p>
+            <code class="code">
+                <div class="type"><span class="span_type">CSS</span><span class="file">file</span></div>
+                <pre>#turn_into_inline{
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+    border: 2px solid red;
+    background-color: aquamarine;
+    color: #000000;
+}</pre>
+            </code>
+        </div>
+        <hr>
+        <h3>Can you make a code that when you click on the button a text disappear then when you click agin it apear</h3>
+        <div id="js_code">
+            <p id="simple_text">It is a text</p>
+            <div id="ad"><span>To know the code go to the next webpage</span><br><span id="large_text">Bye !</span></div>
+            <button id="button" onclick="hide_or_show()">click me to hide text</button>
+        </div>
+    </div>
+    
+</body>
+</html>
